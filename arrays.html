@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arrays</title>
 </head>
 <body>
 
@@ -59,11 +59,28 @@
         }
         document.write('<hr>');
 
-        
+
         //Array Methods
-        
+        //splice
+        const trainings=['.net','java','php','azure'];
+        document.write('<hr>');
+        document.write(trainings);
+        document.write('<br>');
+        trainings.splice(3,1);
+        document.write(trainings+' <br>');
+        trainings.splice(2, 0, "CSS3", "HTML5");
+        document.write(trainings+ '<br>');
 
+        //concat
+        const batch1=['Rakesh',"Mahesh"];
+        const batch2=['Rajesh',"Suresh"];
+        const batch3=batch2.concat(batch1);
+        document.write(batch3);
+        document.write('<hr>');
 
+        //reverse
+        var rev=batch3.reverse();
+        document.write(rev);
     </script>
 </body>
 </html>

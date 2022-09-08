@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Basicss</title>
     <script type="text/javascript">
         function msg() {
             alert('Welcome to JS in the head tag.');
@@ -94,11 +94,11 @@
     <br><br>
 
 <!-- !!!!!! NOT WORKING!!!!! -->
-    <input type="text" onfocus="focus(this)" id="name">
+    <input type="text" onfocus="focus()" id="name">
     <script>
-        function focus(x){
-            //var name1=document.getElementById('name'); -->
-            x.style.background='yellow';
+        function focus(){
+            var x=document.getElementById('name'); 
+            x.style.backgroundColor='yellow';
         }
     </script>
     <br><br>
