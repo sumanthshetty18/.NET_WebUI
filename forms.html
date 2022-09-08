@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Registration Form</h2>
+    <form>
+        <fieldset style="margin-left:300px; margin-right:300px; background-color:aqua;">
+            <legend>User Registration</legend><br>
+             <label>Firstname</label><br>
+             <input type="text" name="fname" required><br>
+
+             <label>Lastname</label><br>
+             <input type="text" name="lname" required><br>
+
+             <label>Email</label><br>
+             <input type="email" name="email" required><br>
+
+             <label>Password</label><br>
+             <input type="password" name="password" required><br>
+
+             <label>Age</label><br>
+             <input type="number" min="21" max="100" required ><br>
+
+             <label>Date of Birth</label><br>
+             <input type="date" required><br>
+
+             <label>Gender</label><br>
+             <input type="radio" id="gender" name="gender" value="Male">Male<br>
+             <input type="radio" id="gender" name="gender" value="Female">Female<br>
+            
+             <label>Address</label><br>
+             <textarea></textarea><br>
+
+             <label>Select Course</label>
+             <select name="course">
+                <optgroup label="dotnet">
+                    <option>.NET core</option>
+                    <option>.NET MV</option>
+                </optgroup>
+                <optgroup label="java">
+                    <option>Spring</option>
+                    <option>Spring boot</option>
+                </optgroup>
+             </select><br><br>
+
+             <label>Certifications Done</label><br>
+             <input type="checkbox" id="microsoft" name="microsoft" value="microsoft"><label>Azure</label><br>
+             <input type="checkbox" id="oracle" name="oracle" value="oracle"><label>Oracle</label><br>
+             <input type="checkbox" id="microsoft" name="microsoft" value="udemy"><label>Udemy</label><br><br>
+
+             <input type="submit"><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>

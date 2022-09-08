@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var courses=['dotnet','java','python'];
+        for(var i=0;i<courses.length;i++){
+            document.write(courses[i]+ " <br>");
+        }
+
+        //PUSH AND POP
+        document.write('<hr>');
+        document.write("Length "+ courses.length+" <br>");
+        var deleted=courses.pop();
+        document.write("Deleted "+deleted+" <br>")
+        document.write("Length "+ courses.length+" <br>");
+
+        document.write('<hr>');
+        courses.push('react');
+        document.write("Pushed "+courses[courses.length-1]+" <br>")
+        document.write("Length "+ courses.length+" <br>");
+        for(var i=0;i<courses.length;i++){
+            document.write(courses[i]+ " <br>");
+        }
+        document.write('<hr>');
+
+        //SHIFT AND UNSHIFT
+        courses.shift();
+        document.write("Shifted first element <br>")
+        document.write("Length "+ courses.length+" <br>");
+        for(var i=0;i<courses.length;i++){
+            document.write(courses[i]+ " <br>");
+        }
+        document.write('<hr>');
+
+        courses.unshift("Angular","Springboot");
+        document.write("UnShifted 2 elements <br>")
+        document.write("Length "+ courses.length+" <br>");
+        for(var i=0;i<courses.length;i++){
+            document.write(courses[i]+ " <br>");
+        }
+        document.write('<hr>');
+
+        //FOR IN AND FOR OF 
+        for(var course in courses){
+            document.write(courses[course]+ " <br>");
+        }
+        document.write('<hr>');
+
+        
+        for(var course of courses){
+            document.write(course+ " <br>");
+        }
+        document.write('<hr>');
+
+
+
+    </script>
+</body>
+</html>

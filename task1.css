@@ -1,0 +1,85 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+      background: #112324;
+      height: 90px;
+      width: 100%;
+}
+.navbar img{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    display:inline-block;
+    line-height: 90px;
+    margin: 0 65px;
+}
+.navbar ul li  a{
+    color: white;
+    font-size: 17px;
+}
+.navbar ul li  a:hover{
+    color: black;
+    background-color:gold;
+    padding: 5px;
+    border-radius: 4px;
+}
+.foodImg{
+    background-image: url('./assests/food1.jpg');
+    background-size: cover;
+    background-repeat:  no-repeat;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    color: rgb(204, 144, 66);
+}
+ 
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ 
+#menu {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#menu td, #menu th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#menu tr:nth-child(even){background-color: #f2f2f2;}
+#menu tr:hover {background-color: #ddd;}
+  
+#menu th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #04AA6D;
+    color: white;
+}
+.youtube{
+    margin-left: 550px !important;
+}
+.about{
+    background:#4f7b7e;
+    border-radius: 25px;
+    box-shadow: 10px 25px 10px #888888;
+    font-size: larger;
+    text-align: center;
+    padding: 40px;
+    margin: 30px 100px;
+}

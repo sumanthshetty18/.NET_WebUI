@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.main{
+    float:center;
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color:green;
+}
+.sidebar-l{
+   width: 15%;
+   height: 1000px;
+   background-color:gainsboro;
+   float: left;
+}
+.content{
+    width: 60%;
+    height: 1000px;
+    float: left;
+    background-color: rgba(43, 86, 226, 0);
+    float: left;
+}
+.sidebar-r{
+    width: 25%;
+    height: 1000px;
+    background-color:gainsboro;
+    float: right;
+}
+
+.logo{
+    float: left;
+}
+.logo h1{
+    padding: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+.navbar ul{
+    float: right;
+}
+.navbar ul li{
+    display:inline-block;
+    line-height: 95px;
+}
+.navbar ul li a{
+    color: aliceblue;
+    font-size: 18px;
+    margin: 0 45px;
+    padding: 10px;
+}
+#active{
+    background-color: rgb(32, 45, 9);
+    border-radius: 5px;
+}
+.navbar ul li a:hover{
+    background-color: rgb(32, 45, 9);
+    border-radius: 5px;
+}
+
+.sidebar-l  h3{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+.sidebar-l ul{
+    margin-left: 40px;
+}
+.sidebar-l ul li{
+    line-height: 35px;
+    padding:10px;
+}
+.sidebar-l ul li a{
+    font-size: 17px;
+}
+.sidebar-l hr{
+    width: 50%;
+    margin-left: 40px;
+}
+.sidebar-l ul li a{
+    padding: 10px;
+}
+.sidebar-l ul li a:hover{
+    background-color: rgb(32, 45, 9);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+
+.content1{
+    margin: 25px 30px;
+    position: relative;
+}
+.content1 {
+    float: left;
+    width: 60%;
+    color: rgb(51, 51, 51);
+    opacity: 90%;
+    font-family:cursive;
+    font-size: 17px;
+    text-align: justify; 
+}
+.content1 h2{
+    margin-bottom: 20px;
+}
+.content1_img{
+    float: right;
+    margin-top: 45px;
+    margin-right: 90px;
+}
+
+
+.sidebar-r  h3{
+    margin-top: 20px;
+    margin-left: 130px;
+    margin-bottom:10px;
+}
+.sidebar-r iframe{
+    margin-left:40px;
+    margin-bottom: 20px;
+}
+.sidebar-r hr{
+    width: 37%;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}

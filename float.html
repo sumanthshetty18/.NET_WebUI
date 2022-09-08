@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 100%;
+            float: center;
+        }
+        .header{
+            text-align: center;
+            background-color: rgb(121, 146, 146);
+            border: 2px solid brown;
+            color: white;
+            padding: 10px;
+        }
+        .left{
+            width: 30%;
+            height: 500px;
+            background-color: blue;
+            border: 3px solid black;
+            float: left;
+        }
+        .center{
+            width: 40%;
+            height: 500px;
+            background-color: red;
+            border: 3px solid black;
+            float:left;
+        }
+        .right{
+            width: 30%;
+            height: 500px;
+            background-color: green;
+            border: 3px solid black;
+            float: left;
+        }
+        .footer{
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            background-color:  rgb(121, 146, 146);;
+            border: 3px solid black;
+            float: left;
+        }
+        .vertical{
+            list-style-type: none;
+            margin: 0;
+            margin-top: 20px;
+            padding: 20px;
+            width: 200px;
+            position: static;
+            overflow:auto;
+            height: 100%;
+        }
+        li a.verticalnav{
+            display: block;
+            color: rgb(166, 210, 210);
+            text-align: left;
+            text-decoration: none;
+            padding: 5px;
+        }
+        li a.verticalnav:hover{
+            background-color: yellow;
+            color: black;
+        }
+        #active{
+            background-color: black;
+            color: yellow;
+        }
+
+        p::first-letter{
+            color: black;
+            font-size: 35px;
+        }
+        p::first-line{
+            color: blue;
+        }
+         
+        ::marker{
+            color: chartreuse;
+        }
+        .transition{
+            width: 300px;
+            height: 200px;
+            transition: width 2s,height 2s;
+        }
+        .transition:hover{
+            width: 600px;
+            height: 400px;
+           /* transform: rotate(20deg);*/
+            /*transform: scaleY(1.5);*/
+        }
+        iframe{
+            width:300px;
+            height:200px; 
+            margin-left:20px; 
+            margin-top:20px; 
+        }
+
+        /*MEDIA QUERY*/
+        @media screen and (max-width:1200px){
+            iframe{
+                height: 100px;
+                width: 150px;
+            }
+
+        }
+        @media screen and (max-width:800px){
+            iframe{
+                height: 60px;
+                width: 90px;
+            } 
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div>
+            <h2 class="header">Ecommerce Website</h2>
+        </div>
+         <div>
+            <div class="left">
+                <ul class="vertical">
+                    <li><a href="index.html" target="_blank" class="verticalnav" id="active">HTML Basic tags</a></li>
+                    <li><a href="forms.html" target="_blank" class="verticalnav">HTML Form Tags</a></li>
+                    <li><a href="" class="verticalnav">CSS Types</a></li>
+                    <li><a href="" class="verticalnav">CSS Selctors</a></li>
+                    <li><a href="" class="verticalnav">CSS Tags</a></li>
+                    <li><a href="" class="verticalnav">CSS Float</a></li>
+                    <li><a href="" class="verticalnav">CSS Animation</a></li>
+                    <li><a href="" class="verticalnav">CSS Navigation</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis numquam similique a, nemo ipsum officiis modi officia quidem eligendi optio.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis numquam similique a, nemo ipsum officiis modi officia quidem eligendi optio.</p>
+            </div>
+            <div class="right">
+                <iframe src="https://www.youtube.com/embed/pq3Otf0zbdk"></iframe>
+            </div>
+         </div>
+        <div class="footer">
+            <h2>&copy; www.dukaan.com</h2>
+        </div>
+        
+    </div>
+
+    <ul style="margin-top:30px">
+        <li>Styled Marker</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+
+    <div>
+        <img  class="transition" width="300px" height="200px" src="assests/food1.jpg" alt="">
+    </div>
+</body>
+</html>
+
+
+
+ 
