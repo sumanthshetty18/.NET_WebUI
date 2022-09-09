@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+
+<body>
+
+
+    <!--Function without a prototype -->
+    <script>
+        function course_details(){
+            //2 properties
+            courseid=100;
+            coursename='dotnet';
+        }
+        var c=new course_details();
+        c.course_details='120hrs';
+        document.write(c.course_details+'<br>'); //3rd property
+        var c1=new course_details();
+        document.write(c.course_details+'<br>');  //cannot access
+    </script>
+
+    <script>
+        //function with prototype
+        function course_details() {
+            courseid = 200;
+            coursename = 'java';
+        }
+
+        //3rd property created using prototype object
+        course_details.prototype.course_details = '150hrs';
+        //instance for course details
+        var c = new course_details();
+        document.write('<hr' + c.courseduration + '<br>');
+
+        var c1 = new course_details();
+        document.write(c.courseduration + '<br>');
+
+        //create a function using prototype
+        course_details.prototype.display = function () {
+            return courseid + " " + coursename;
+        }
+
+        var c2 = new course_details();
+        document.write('<hr' + c2.courseduration + '<br>');
+        document.write(c2.display());
+
+    </script>
+
+
+    <!-- Arrow Functions -->
+    <script>
+        //normal function
+        function Display() {
+            document.write('<hr>' + "Welcome to Normal Function");
+        }
+        //arrow function
+        let disp = () => document.write('<br>' + "Welcome to Arrow Function");
+        let square = x => document.write('<br>' + "Square is :"+(x*x));
+        let add = (x,y) => document.write('<br>' + "Sum is :"+(x+y));
+
+        Display();
+        disp();
+        square(2);
+        add(5,6);
+
+
+    </script>
+
+</body>
+
+</html>
