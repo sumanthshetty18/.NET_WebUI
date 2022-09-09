@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Encapsulation</title>
+</head>
+<body>
+    <script>
+        //function
+        function trainee_details(tid,tname){
+            var id=tid;
+            var name=tname;
+            //encapsulation
+            Object.defineProperty(
+                this,"ID",{
+                    get:function(){
+                        return id;
+                    },
+                    set:function(){
+                        this.id=id;
+                    }
+                }
+            )  
+            Object.defineProperty(
+                this,"NAME",{
+                    get:function(){
+                        return name;
+                    },
+                    set:function(){
+                        this.name=name;
+                    }
+                }
+            )    
+        }
+        var t=new trainee_details(18,'Kohli');
+        console.log(t.ID);
+        console.log(t.NAME);
+    </script>
+    
+    <script>
+        //Class - Encapsulation
+        class Employee{
+            constructor(){
+                var empid;
+                var empname;
+            }
+            //property for empid
+            getID(){
+                return this.empid;
+            }
+            setID(id){
+                this.empid=id;
+            }
+        }
+        var e=new Employee();
+        e.setID(18);
+        console.log(e.getID());
+        console.log('----------')
+    </script>
+
+    <script>
+       class address{
+        //variables
+        //#street_no;
+       // city;
+       // pincode;
+
+        constructor(no,city,pin){
+            this.street_no=no;
+            this.city=city;
+            var pincode=pin; //local variable - cant be accesed outside of class directly
+            this.get=()=>{ 
+                return pincode;
+            }
+        }
+
+       }
+       var addr=new address(3,'Mysore',32517);
+       console.log(addr.street_no);
+       console.log(addr.city); 
+       console.log(addr.pincode); //undefined
+       console.log(addr.get()); //here pincode can be accessed.
+
+
+    </script>
+</body>
+</html>

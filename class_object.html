@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and Object</title>
+</head>
+
+<body>
+
+    <script>
+        class Trainee {
+            //default constructor
+            /*constructor(){
+                console.log("Trainee Details");
+            }*/
+            //parameterized constructor
+            constructor(tid, tname) {
+                this.id = tid;
+                this.name = tname;
+            }
+            //function
+            trainee_details() {
+                return this.id + " " + this.name;
+            }
+        }
+
+        //instance
+        //
+        var t1 = new Trainee(10, 'John');
+        console.log(t1.id);
+        console.log(t1.name);
+        console.log(t1.trainee_details);
+    </script>
+
+</body>
+
+</html>

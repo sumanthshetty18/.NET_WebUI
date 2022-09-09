@@ -12,7 +12,14 @@
 .header{
     width: 100%;
     height: 100px;
-    background-color:green;
+    background-color:rgb(62, 150, 62);
+}
+a:hover{
+    cursor: pointer;
+}
+.logo h1:hover{
+    cursor: pointer;
+    color:rgb(229, 197, 39);
 }
 .sidebar-l{
    width: 15%;
@@ -27,6 +34,7 @@
     background-color: rgba(43, 86, 226, 0);
     float: left;
 }
+
 .sidebar-r{
     width: 25%;
     height: 1000px;
@@ -54,7 +62,7 @@
     margin: 0 45px;
     padding: 10px;
 }
-#active{
+.active{
     background-color: rgb(32, 45, 9);
     border-radius: 5px;
 }
@@ -104,6 +112,7 @@
     font-family:cursive;
     font-size: 17px;
     text-align: justify; 
+    line-height: 1.7;
 }
 .content1 h2{
     margin-bottom: 20px;
@@ -112,6 +121,33 @@
     float: right;
     margin-top: 45px;
     margin-right: 90px;
+}
+.content1_img img{
+    transition: width 2s, height 4s;
+}
+.content1_img img:hover{
+    width: 180px;
+}
+.content hr{
+    clear: left;
+    width: 90%;
+    margin-left: 30px;
+}
+
+.content2{
+    margin: 25px 40px 25px 30px;
+    position: relative;
+    line-height: 1.7;
+}
+.content2 {
+    color: rgb(51, 51, 51);
+    opacity: 90%;
+    font-family:cursive;
+    font-size: 17px;
+    text-align: justify; 
+}
+.content2 h2{
+    margin-bottom: 20px;
 }
 
 
