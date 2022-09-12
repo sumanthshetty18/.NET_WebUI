@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+
+<body>
+
+    <script>
+        //find even or odd
+        console.log('---------------------------------------');
+        var a = 5;
+        if (a % 2 == 0)
+            console.log(a + " is even.");
+        else
+            console.log(a + " is odd.");
+    </script>
+
+    <script>
+        //Swap two numbers
+        //with third variable
+        var a = 10, temp;
+        var b = 20;
+        console.log('---------------------------------------');
+        console.log('Swap with help of third variable');
+        console.log("Before: a=" + a + " b=" + b);
+        temp = a;
+        a = b;
+        b = temp;
+        console.log("After: a=" + a + " b=" + b);
+
+        //without third variable
+        console.log('Swap without third variable');
+        console.log("Before: a=" + a + " b=" + b);
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        console.log("After: a=" + a + " b=" + b);
+
+        //Swap using one line/expression
+        console.log('Swap using one expression');
+        console.log("Before: a=" + a + " b=" + b);
+        a = a ^ b ^ (b = a);
+        console.log("After: a=" + a + " b=" + b);
+        console.log('---------------------------------------');
+    </script>
+
+
+    <script>
+        //find total,percentage and grade
+        var sub1 = 69, sub2 = 74, sub3 = 94, sub4 = 94, sub5 = 94, grade;
+        var total = sub1 + sub2 + sub3 + sub4 + sub5;
+        var percent = (total / 500) * 100;
+        if (percent > 80)
+            grade = 'A';
+        else if (percent > 60 && percent <= 80)
+            grade = 'B';
+        else if (percent > 45 && percent <= 60)
+            grade = 'C';
+        else grade = 'Fail';
+
+        console.log('Total Marks: ' + total);
+        console.log('Percentage : ' + percent);
+        console.log('Grade : ' + grade);
+        console.log('---------------------------------------');
+    </script>
+
+    <script>
+        //sum of digits
+        var num = 1234, sum = 0, rem,rev;
+    
+        console.log("Number = "+num);
+        rev= parseInt(String(num).split("").reverse().join(""));
+        console.log("Reversed Number: "+rev);
+
+        for (i = 0; num > 0; i++) {
+            rem = num % 10;
+            sum += rem;
+            num = Math.floor(num / 10);
+        }
+        console.log("Sum of digits = " + sum);
+        console.log('---------------------------------------');
+    </script>
+
+
+    <script>
+        //find factorial
+        var a = 7, fact = 1;
+
+        for (i = a; i > 1; i--) {
+            fact *= i;
+        }
+        console.log("Factorial of " + a + " is =" + fact);
+        console.log('---------------------------------------');
+    </script>
+
+</body>
+
+</html>
