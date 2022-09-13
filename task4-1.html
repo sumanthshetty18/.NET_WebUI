@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+   <style>
+      .container {
+         margin-left: 600px;
+         margin-top: 150px;
+         width: 300px;
+         padding: 20px;
+         background-color: rgb(144, 157, 217);
+         border-radius: 16px;
+      }
+
+      .box {
+         font-size: 18px;
+         font-family: cursive;
+         text-align: center;
+         margin-left: 0 50px;
+      }
+
+      .btn {
+         width: 60px;
+         height: 30px;
+         background-color: brown;
+         color: aliceblue;
+         font-family: cursive;
+         border-radius: 4px;
+      }
+
+      .btn:hover {
+         cursor: pointer;
+         opacity: 50%;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <div class="box">
+         <h1 style="text-align: center;"> LOGIN FORM</h1>
+         <form name="RegForm" onsubmit="return form_validate()" method="post">
+            <p>Username: <input type="text"  name="Name" /></p> <br />
+            <p>Password: <input type="text"  name="Password" /></p> <br />
+            <p>
+               <input class="btn" type="submit" value="Send" name="Submit" />
+               <input class="btn" type="reset" value="Reset" name="Reset" />
+            </p>
+
+         </form>
+
+      </div>
+   </div>
+
+</body>
+
+</html>
+
+<script>
+   function form_validate() {
+      var name = document.forms.RegForm.Name.value;
+      var password = document.forms.RegForm.Password.value;
+
+      if (name == "" || regName.test(name)) {
+         window.alert("Please enter your name properly.");
+         name.focus();
+         return false;
+      }
+
+      if (password == "") {
+         alert("Please enter your password");
+         password.focus();
+         return false;
+      }
+
+      if (password.length < 6) {
+         alert("Password should be atleast 6 character long");
+         password.focus();
+         return false;
+      }
+      return true;
+   }
+</script>
